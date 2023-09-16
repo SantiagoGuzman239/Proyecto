@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agregar etiquetas OG para compartir en redes sociales -->
+    <meta property="og:title" content="Mi Currículum">
+    <meta property="og:description" content="Soy un profesional altamente calificado...">
+    <meta property="og:image" content="santiago-gonzalez.jpg">
+    <!-- Estilos CSS -->
+
+    <title>Mi Currículum</title>
+    <!-- Incluir los archivos CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body id ="Inicio">
+    
+    <ul class="nav justify-content-end bg-info">
+        <li class="nav-item "> <h6 id="acercademi" class="text-success-emphasis bg-white"> </h6></li>
+        <li class="nav-item ">  <h6 id ="qr"></h6></li>
+        <li class="nav-item">
+            
+            <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick='document.getElementById("acercademi").innerHTML = "Santiago Gonzalez especialista en soluciones de Marketing."'>
+                Acerca de Mi
+              </button>
+        </li>
+        <li class="nav-item">
+            <a href="#" onclick="mostrarQR(); return false;">
+                <img id="imagenQR" src="imagen/qrlogo.jpg" alt="QR" width="50" height="50" >
+            </a>
+            <script>
+                function mostrarQR() {
+                    // Obtiene el elemento de imagen por su ID
+                    var imagen = document.getElementById("imagenQR");
+        
+                    // Cambia la fuente de la imagen al archivo QR deseado cuando se hace clic
+                    imagen.src = "imagen/qrcode.png"; // con la ruta de tu imagen QR
+                    imagen.alt = "Código QR"; // Cambia el texto alternativo si es necesario
+                    imagen.width="65";
+                    imagen.height="70";
+                }
+            </script> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html#resumen">Resumen Profecional</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="index.html#explab">Experiencia Laboral</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html#educacion">Educación</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link text-white" href="index.html#habilidades">Habilidades</a>
+          </li>
+
+      </ul>
+    <div class="container-sm mb-4 pb-4 mt-4 pt-3 bg-secondary text-white " >
+        
+        <div class="row mt-4 ">
+            <div class="col-md-6 pt-2 bg-info " style="--bs-bg-opacity: .5;">
+                <img id="image"src="imagen/santiago-gonzalez.jpg" class="rounded-pill" style="border:5px solid #ffffff" alt="Santiago Gonzalez" onmouseover="document.getElementById('image').src='imagen/santiago-gonzalez3.jpg'" onmouseout="document.getElementById('image').src='imagen/santiago-gonzalez.jpg'">
+                <h1>Santiago Gonzalez</h1>
+                <p> Santo Domingo 238</p>
+                <p>Rosario (Santa Fe)</p>
+                <p>santiago.gozalez@gmail.com</p>
+                <p>Tel Cel: 299-647493551</p>
+            </div>
+            <div  class="col-md-6 bg-warning " style="--bs-bg-opacity: .4;">
+                <h2 id="resumen" >Resumen Profesional</h2>
+                <p class="text-justify" >Profesional del marketing con más de 8 años de experiencia en el sector, especializado en estrategias de  marketing digital y gestión de redes sociales. Cuento con un historial comprobado de aumento de visibilidad de marca y mejora del ROI a travé de estrategias de SEO y SEM. Como apasionado del marketing digital, estoy constantemente actualizado sobre las últimas tendencias y tecnologías emergentes en el campo. Esto me permite mantenerme a la vanguardia y aplicar enfoques innovadores en mis estrategias, manteniendo la competitividad de las marcas que he tenido el honor de representar. Estoy comprometido con el aprendizaje continuo y la mejora constante, lo que me ha permitido construir una sólida reputación en la industria. Mi objetivo es seguir desafiándome y contribuir al éxito de futuros proyectos, aplicando mi experiencia y pasión por el marketing digital para alcanzar resultados excepcionales.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6  bg-danger " style="--bs-bg-opacity: .2;">
+                <h2 id="explab">Experiencia Laboral</h2>
+                <ul>
+                    <li>
+                        <h5>ABC Marketing, Rosario</h5>
+                        <p>Junio 2023, actualidad</p>
+                        <p class="text-justify" >Especialista en Marketing Digital. Desarrolo e implementacion de estrategias de marketing digital para mas de 15 clientes. Aumento del tráfico web de los clientes en un promedio del 25% mediantes estrategias de SEO y SEM. </p>
+                    </li>
+                    <!-- Repite este bloque para cada trabajo -->
+                    <li>
+                        <h5>XYZ Marketing, Tucuman </h5>
+                        <p>Enero 2019, Mayo 2023</p>
+						<P class="text-justify">Adminstración y supervisión de las cuentas de redes sociales. Aumento de los seguidores en todas las plataformas en un promedio del 30%.</p> 
+                    </li>
+                </ul>
+            </div>
+            <div  class="col-md-6 bg-danger" style="--bs-bg-opacity: .4;">
+                <h2 id="educacion">Educación</h2>
+                <ul>
+                    <li>
+                        <h5 >Univesidad Nacional de Cordoba</h5>
+                        <p>Licenciatura en Administracion y Dirección de Empresas - 2014</p>
+            
+                    </li>
+                    <!-- Repite este bloque para cada institución educativa -->
+                    <li>
+                        <h5>Univesidad Nacional de Salta</h5>
+                        <p>Máster en Marketing Digital y E-commerce - 2019</p>
+            
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        <div class="row bg-warning  mt-4 "style="--bs-bg-opacity: .2;" >
+            <div class="col-md-6">
+                <h2 id="habilidades">Habilidades</h2>
+                <ul>
+                    <li>Inglés alto (certificado C1)
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                         
+                        </div>  
+                    </li>
+                    <li>Creación de contenidos digitales
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                          </div>
+                    </li>
+                    <li>Análisis de datos y Google Analytics
+
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                          </div>
+                    </li>
+                    <!-- Agrega más habilidades según sea necesario -->
+                </ul>
+            </div>
+
+            <div class="col-md-6 bg-primary pt-4">
+                <img id="image"src="imagen/redes-sociales.png" class="img-fluid" style="border:5px solid #050000a1" alt="Santiago Gonzalez">
+             </div>   
+        </div>
+
+    </div>
+   
+    <nav class="navbar navbar-light bg-light">
+        <div class="container bg-warning">
+          <a class="navbar-brand" href="index.html#Inicio">
+            <img src="imagen/inicio.png" alt="Arriba" width="30" height="24">
+          </a>
+         </div>
+    </nav>
+
+
+    <!-- Incluir el archivo JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Función para mostrar u ocultar secciones al hacer clic en los encabezados
+        $(document).ready(function () {
+            $(".accordion-header").click(function () {
+                $(this).next(".accordion-content").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
